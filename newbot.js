@@ -315,7 +315,9 @@ let args = message.content.split(' ').slice(1).join(' ');
 });
 
 
-else "repeat":
+
+    else if (mess.startsWith(prefix + 'repeat')) {
+
 			if (isPlaying) {
 				queue.splice(1, 0, queue[0]);
 				songsQueue.splice(1, 0, songsQueue[0]);
