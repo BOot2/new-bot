@@ -201,7 +201,7 @@ function isYoutube(str) {
   if (message.content === `${prefix}`) {
     const embed = new Discord.RichEmbed()
      .setColor("RANDOM")
-.setFooter('Thank You For use this bot ! .')
+.setFooter('الـجـنـرال ! .')
       message.channel.send({embed});
      }
     });
@@ -231,7 +231,7 @@ ${prefix}join ⇏ لدخول البوت الروم
 
 
 client.on('message', function(message) {
-	const myID = "456626501182291978";
+	const myID = "488334414124810240";
     let args = message.content.split(" ").slice(1).join(" ");
     if(message.content.startsWith(prefix + "setname")) {
 		        if(message.author.id !== myID) return;
@@ -289,7 +289,7 @@ client.on('message', function(message) {
 
 client.on('message', async message => {
             if(!message.channel.guild) return;
-             if (message.content.startsWith("aphrodite")) {
+             if (message.content.startsWith(".")) {
 let args = message.content.split(' ').slice(1).join(' ');
             let sigMessage = await args;
             
